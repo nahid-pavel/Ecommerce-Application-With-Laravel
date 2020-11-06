@@ -9,38 +9,66 @@
         <div class="card">
             <div class="card-header">Add New Product</div>
             <div class="card-body">
-                <form method="post" action="/admin/create">
+                <form method="post" action="/admin/create" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input type="text" class="form-control" placeholder="Enter Product title" name="title">
-                        @error('title')
-                        <p class="text-danger">{{ $message }}<p>
+                        <input type="text" class="form-control {{ $errors->has('title') && 'error' }}"
+                            placeholder="Enter Product title" name="title">
+                        @error(' title') <p class="text-danger">{{ $message }}<p>
                                 @enderror
 
                     </div>
                     <div class="form-group">
                         <label for="description"> Description</label>
-                        <textarea class="form-control" placeholder="Enter Product description" cols="50" rows="5"
-                            name="description"></textarea>
+                        <textarea class="form-control {{ $errors->has('description') && 'error' }}"
+                            placeholder="Enter Product description" cols="50" rows="5" name="description"></textarea>
                         @error('description')
                         <p class="text-danger">{{ $message }}<p>
                                 @enderror
                     </div>
                     <div class="form-group">
                         <label for="desction"> Price</label>
-                        <input type="number" class="form-control" placeholder="Enter price" name="price">
+                        <input type="number" class="form-control {{ $errors->has('price') && 'error'}}"
+                            placeholder="Enter price" name="price">
                         @error('price')
                         <p class="text-danger">{{ $message }}<p>
                                 @enderror
                     </div>
                     <div class="form-group">
                         <label for="description">Quantity</label>
-                        <input type="number" class="form-control" placeholder="Enter quantity" name="amount">
+                        <input type="number" class="form-control {{ $errors->has('amount') &&  'error' }}"
+                            placeholder="Enter quantity" name="amount">
                         @error('amount')
                         <p class="text-danger">{{ $message }}<p>
                                 @enderror
                     </div>
+                    <div class="form-group">
+                        <label for="desction">Upload Image</label>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                                <input type="file" class="form-control" placeholder="Enter price"
+                                    name="product_image[]">
+                            </div>
+                            <div class="col-md-3">
+
+                                <input type="file" class="form-control" placeholder="Enter price"
+                                    name="product_image[]">
+                            </div>
+                            <div class="col-md-3">
+
+                                <input type="file" class="form-control" placeholder="Enter price"
+                                    name="product_image[]">
+                            </div>
+                            <div class="col-md-3">
+
+                                <input type="file" class="form-control" placeholder="Enter price"
+                                    name="product_image[]">
+                            </div>
+                        </div>
+                    </div>
+
                     <button type="submit" class="btn btn-primary">Add Product</button>
 
                 </form>

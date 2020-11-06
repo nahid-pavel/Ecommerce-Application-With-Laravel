@@ -20,6 +20,7 @@
     <!-- endinject -->
     <!-- Layout styles -->
     <link rel="stylesheet" href="/css/admin_style_demo.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <!-- End Layout styles -->
     <link rel="shortcut icon" href="/images/favicon.ico" />
 </head>

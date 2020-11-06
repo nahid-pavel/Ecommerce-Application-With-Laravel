@@ -13,15 +13,16 @@
 
         <div class="col-md-8">
             <div class="widget margin-top-20">
-                <h2>Featured Products</h2>
+                <h2>All Products</h2>
                 <div class="row">
-                    @foreach($products as $product)
+                    @forelse($products as $product)
                     <div class="col-md-3">
                         <div class="card ">
                             @php $i=1 @endphp
                             @foreach($product->images as $image)
                             @if($i > 0)
-                            <img class="card-img-top featured_img " src="/images/{{ $image->image  }}" alt="Card image">
+                            <img class="card-img-top featured_img " src="/images/products/{{ $image->image  }}"
+                                alt="Card image">
                             @endif
                             @php $i-- @endphp
                             @endforeach
@@ -33,7 +34,9 @@
                             </div>
                         </div>
                     </div>
-                    @endforeach
+                    @empty
+                    <p class="text-center">Currently there is no product</p>
+                    @endforelse
 
                 </div>
             </div>
