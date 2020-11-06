@@ -19,8 +19,19 @@
                         <div class="card ">
                             <img class="card-img-top featured_img " src="images/1.jpg" alt="Card image">
                             <div class="card-body">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Some example text.</p>
+                                <h4 class="card-title">Samusung Galaxy</h4>
+                                <p class="card-text"> Taka- 10000</p>
+                                <a href="#" class="btn btn-outline-success btn-block">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card ">
+                            <img class="card-img-top featured_img " src="images/2.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Walton Primo</h4>
+                                <p class="card-text">Taka-12000</p>
                                 <a href="#" class="btn btn-outline-success btn-block">Add to Cart</a>
                             </div>
                         </div>
@@ -30,19 +41,8 @@
                         <div class="card ">
                             <img class="card-img-top featured_img " src="images/1.jpg" alt="Card image">
                             <div class="card-body">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Some example text.</p>
-                                <a href="#" class="btn btn-outline-success btn-block">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card ">
-                            <img class="card-img-top featured_img " src="images/1.jpg" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Some example text.</p>
+                                <h4 class="card-title">Symphony C17</h4>
+                                <p class="card-text">Taka-12000</p>
                                 <a href="#" class="btn btn-outline-success btn-block">Add to Cart</a>
                             </div>
                         </div>
